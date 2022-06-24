@@ -10,6 +10,7 @@ const upload = multer({
 })
 
 categoriesRoutes.post("/", (request: Request, response: Response) => {
+    
     return createCategoryController.handle(request, response);
 })
 
